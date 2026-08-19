@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finn O'Neill | Portfolio</title>
+  <meta name="description" content="Portfolio website showcasing projects, skills, and contact details.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top">Finn O'Neill</a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="https://www.linkedin.com/in/finn-o-neill-630439292/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://github.com/Explorer017" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div>
+          <p style="margin:0 0 0.4rem;color:var(--accent);font-weight:700;">Hello, I'm</p>
+          <h1 id="hero-title">Finn O'Neill<br>Software Engineer</h1>
+          <p class="lead">
+            I write programs that are fast, accessible, and easy to maintain. Most recently focused on C++ and embedded systems, but I have previous experience in C#, Python, Dart and PHP. I enjoy working on projects that have a positive impact on users and the world.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View Projects</a>
+            <a class="button button-ghost" href="#contact">Get In Touch</a>
+          </div>
+        </div>
+        <aside class="profile-card" aria-label="Profile summary">
+          <div class="avatar" aria-hidden="true">FO</div>
+          <strong>Open to opportunities</strong>
+          <ul class="quick-list">
+            <li>Location: Sheffield</li>
+            <li>Focus: C++, C#, Embedded Systems</li>
+            <li>Availability: Full-time</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="container" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <p class="section-note">
+        I'm a developer who enjoys turning ideas into useful products. I prioritise maintainable code,
+        accessible interfaces, and smooth user experiences. Being in my final year of university,
+        I'm passionate about software development and eager to contribute to meaningful projects. With a strong foundation in programming, 
+        and having completed a placement year, I have experience working in a professional software development environment, 
+        particularly in embedded systems and C++ development, and I am always eager to learn new technologies and improve my skills.
+      </p>
+    </section>
+
+    <section id="skills" class="container" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <ul class="tag-list">
+        <li>C++</li>
+        <li>Embedded Systems</li>
+        <li>C#</li>
+        <li>Python</li>
+        <li>Dart</li>
+        <li>PHP</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="container" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Featured Projects</h2>
+      <p class="section-note">Here are some of my public projects:</p>
+      <div class="card-grid">
+        <article class="card">
+          <h3>SNAKE.EXE</h3>
+          <p>A version of the classic game Snake written in C++ for MS-DOS</p>
+          <a href="https://github.com/Explorer017/SNAKE.EXE" aria-label="View SNAKE.EXE source or demo">View Project</a>
+        </article>
+        <article class="card">
+          <h3>TaskManagementSystem</h3>
+          <p>A simple task management system built using PHP and SQLite created as part of a university project.</p>
+          <a href="https://github.com/Explorer017/TaskManagementSystem" aria-label="View TaskManagementSystem source or demo">View Project</a>
+        </article>
+        <article class="card">
+          <h3>XmasEveCounter</h3>
+          <p>A simple website for tracking the days until Christmas Eve, built with C# and Blazor.</p>
+          <a href="https://github.com/Explorer017/XmasEveCounter" aria-label="View XmasEveCounter source or demo">View Project</a>
+          <br/>
+          <a href="https://explorer017.github.io/XmasEveCounter/" aria-label="View XmasEveCounter live demo">Live Demo</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <ul class="contact-list">
+        <li>GitHub: <a href="https://github.com/Explorer017">github.com/Explorer017</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com/in/finn-o-neill-630439292/" target="_blank" rel="noopener noreferrer">in/finn-o-neill-630439292/</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>&copy; <span id="year"></span> Finn O'Neill</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
